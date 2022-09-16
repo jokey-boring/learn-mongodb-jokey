@@ -1,9 +1,11 @@
 name: More Actions Demo
 on: [push]
 jobs:
+  # 一项工作
   build:
     runs-on: ubuntu-latest
     steps:
+      # 工作步骤（每一项工作在做些什么）
       - uses: actions/checkout@v2
         with:
           repository: 'jokey-boring/My_database'

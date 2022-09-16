@@ -7,8 +7,8 @@ jobs:
       - run: echo "triggered by a ${{ github.event_name }} event"
       - run: echo "running on a ${{ runner.os }} server hosted by Github"
       - name: check out repo code
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - run: echo "the ${{ github.repository }} has been cloned"
       - name: List files in the repo
-      run: |
-        ls ${{ github.workspace }}
+        run: |
+          ls ${{ github.workspace }}
